@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0%;
+}
+
+body {
+    background-color: blueviolet;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+p{
+    text-align: start;
+}
+h2{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+.textos{
+    margin-top: 50px;
+    border-radius: 50px;
+    border: solid 10px white;
+    padding: 50px;
+    padding-top: 10px;
+}
+.textos div{
+    margin-top: 25px;
+}
+.textos div h3{
+    margin-bottom: 5px;
+}
+.logo {
+    letter-spacing: 10px;
+    text-shadow: black 5px 5px;
+}
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-items: center;
+}
+.imagenes img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+    border: 10px solid white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.redes {
+    border-radius: 50px;
+    border: 10px solid white;
+}
+.secciones a {
+    border: 5px solid black;
+    border-radius: 25%;
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+    text-decoration: none;
+}
+.encabezado {
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.encabezado ul {
+    list-style: none;
+}
+.encabezado ul li {
+    display: inline-block;
+}
+.encabezado a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15%;
+}
+.encabezado a:hover {
+    background: black;
+}
+
+
+/*definiendo areas*/
+header {
+    grid-area: header;
+    position: fixed;
+    background-color: blue;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    margin: 0%;
+}
+
+main {
+    grid-area: main;
+    margin-top: 100px;
+}
+
+aside {
+    grid-area: aside;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50px;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 25px;
+}
+
+/*acomodando areas*/
+
+.index {
+    margin: 10px;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "aside"
+        "footer";
+    gap: 10px;
+}
+
+@media (min-width:400px) {
+    .index {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section"
+            "aside"
+            "footer";
+    }
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 50px;
+        border: 10px solid white;
+        padding: 10px;
+    }
+    .redes div img{
+        height: 50px;
+        width: 50px;
+    }
+    .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:768px) {
+    .index {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section"
+            "aside"
+            "footer";
+        }
+        body{
+            background: rgb(150, 5, 255);
+            background: linear-gradient(135deg, rgba(150, 5, 255, 1) 25%, rgba(100, 0, 255, 1) 50%, rgba(50, 40, 255, 1) 75%, rgba(0, 28, 255, 1) 100%);
+        }
+        .redes div img{
+            height: 75px;
+            width: 75px;
+        }
+
+    .imagenes img {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media (min-width:1024px) {
+    .index {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main aside"
+            "section section"
+            "footer footer";
+        }
+        .redes {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+}
+
+
+
+
+
+/*seccion de consolas*/
+.consolas{
+    background-color: red;
+}
+.consolas .imagenes img{
+    border: 0;
+}
+.info{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media (min-width:400px) {
+    .consolas {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        gap: 10px;
+    }
+    .imagenesConsolas {
+        display: flex;
+        flex-direction: row;
+        display: grid;
+    }   
+    .consolas .imagenes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:768px) {
+    .consolas {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+    .consolas .redes {
+        display: flex;
+        flex-direction: row;
+    }
+    .consolas .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .consolas{
+        background: rgb(250,5,5);
+        background: linear-gradient(135deg, rgba(250,5,5,1) 25%, rgba(200,0,255,1) 50%, rgba(50,40,255,1) 75%, rgba(0,28,255,1) 100%);
+    }
+}
+
+@media (min-width:1024px) {
+    .consolas {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+    
+    .consolas .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+/*seccion de shooters*/
+.juegos .info img{
+    margin-bottom: 15px;
+    width: 200px;
+    height: 300px;
+}
+
+.shooters{
+    background-color: aqua;
+}
+.fondo{
+    background-color: #2bff00;
+}
+
+@media (max-width:500px) {
+    .juegos .imagenes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:768px){
+    .fondo{
+        background: rgb(0,250,8);
+        background: linear-gradient(135deg, rgba(0,250,8,1) 25%, rgba(50,40,255,1) 75%, rgba(0,28,255,1) 100%);
+    }
+}
+
+@media (min-width:1024px) {
+    .juegos .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }.juegos aside{
+        flex-direction: row-reverse;
+    }
+}
