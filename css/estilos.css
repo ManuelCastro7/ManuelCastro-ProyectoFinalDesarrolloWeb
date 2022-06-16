@@ -66,6 +66,7 @@ h2{
     text-decoration: none;
 }
 .encabezado {
+    box-shadow: rgba(255, 255, 255, 0.712) 5px 5px 5px 5px;
     padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -140,7 +141,7 @@ footer {
 
 @media (min-width:400px) {
     .index {
-        margin-top: 100px;
+        margin-top: 3em;
         display: grid;
         grid-template-areas:
             "header"
@@ -214,6 +215,9 @@ footer {
 .consolas .imagenes img{
     border: 0;
 }
+.consolasMargin{
+    margin-top: 6em;
+}
 .info{
     margin-left: 10px;
     margin-right: 10px;
@@ -285,13 +289,15 @@ footer {
 
 
 
-/*seccion de shooters*/
+/*seccion de shooters, racings y rpg*/
+.juegos{
+    margin-top: 6em;
+}
 .juegos .info img{
     margin-bottom: 15px;
     width: 200px;
     height: 300px;
 }
-
 .shooters{
     background-color: aqua;
 }
