@@ -4,7 +4,10 @@
 }
 
 body {
-    background-color: blueviolet;
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
@@ -18,12 +21,31 @@ h2{
     text-transform: uppercase;
     font-family: cursive;
 }
+nav div{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+nav div a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+nav div:hover {
+    background: blue;
+    color: black;
+}
+nav div:active{
+    background-color: gray;
+    color: black;
+}
 .textos{
-    margin-top: 50px;
     border-radius: 50px;
-    border: solid 10px white;
-    padding: 50px;
-    padding-top: 10px;
+    padding: 25px;
+    background-color: rgba(125,125,125,0.5);
 }
 .textos div{
     margin-top: 25px;
@@ -38,14 +60,14 @@ h2{
 .imagenes {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     justify-items: center;
+    display: grid;
 }
 .imagenes img {
     width: 200px;
     height: 150px;
     border-radius: 50px;
-    border: 10px solid white;
+    border: 5px solid white;
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -53,45 +75,12 @@ h2{
     justify-content: space-evenly;
     align-items: center;
 }
-.redes {
-    border-radius: 50px;
-    border: 10px solid white;
-}
-.secciones a {
-    border: 5px solid black;
-    border-radius: 25%;
-    color: white;
-    font-weight: bolder;
-    background-color: black;
-    text-decoration: none;
-}
 .encabezado {
-    box-shadow: rgba(255, 255, 255, 0.712) 5px 5px 5px 5px;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.encabezado ul {
-    list-style: none;
-}
-.encabezado ul li {
-    display: inline-block;
-}
-.encabezado a {
-    color: white;
-    text-decoration: none;
-    padding: 7px;
-}
-.encabezado a:hover {
-    background: white;
-    color: blue;
-}
-.encabezado a:active{
-    background-color: black;
-    color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px;
 }
 
 
@@ -99,11 +88,20 @@ h2{
 header {
     grid-area: header;
     position: fixed;
-    background-color: blue;
+    background: rgb(255,0,0);
+    background: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,255,1) 100%);
     left: 0%;
     right: 0%;
     top: 0%;
     margin: 0%;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5em;
 }
 
 main {
@@ -113,7 +111,8 @@ main {
 aside {
     grid-area: aside;
     border-radius: 50px;
-    margin-top: 50px;
+    margin-top: 25px;
+    background-color: rgba(125,125,125,0.5);
 }
 
 section {
@@ -136,6 +135,7 @@ footer {
     display: grid;
     grid-template-areas:
         "header"
+        "nav"
         "main"
         "section"
         "aside"
@@ -149,6 +149,7 @@ footer {
         display: grid;
         grid-template-areas:
             "header"
+            "nav"
             "main"
             "section"
             "aside"
@@ -158,7 +159,6 @@ footer {
         display: flex;
         justify-content: space-evenly;
         border-radius: 50px;
-        border: 10px solid white;
         padding: 10px;
     }
     .redes div img{
@@ -169,6 +169,9 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
     }
+    nav{
+    margin-top: 25px;
+    }
 }
 
 @media (min-width:600px) {
@@ -176,20 +179,19 @@ footer {
         display: grid;
         grid-template-areas:
             "header"
+            "nav"
             "main"
             "section"
             "aside"
             "footer";
         }
-        body{
-            background: rgb(150, 5, 255);
-            background: linear-gradient(135deg, rgba(150, 5, 255, 1) 25%, rgba(100, 0, 255, 1) 50%, rgba(50, 40, 255, 1) 75%, rgba(0, 28, 255, 1) 100%);
-        }
         .redes div img{
             height: 75px;
             width: 75px;
         }
-
+        .imagenes{
+            grid-template-columns: 1fr 1fr;
+        }
     .imagenes img {
         width: 250px;
         height: 200px;
@@ -201,10 +203,14 @@ footer {
         display: grid;
         grid-template-areas:
             "header header"
+            "nav nav"
             "main section"
             "aside aside"
             "footer footer";
             grid-template-rows: auto;
+        }
+        .imagenes{
+            grid-template-columns: 1fr;
         }
 }
 
@@ -216,6 +222,9 @@ footer {
 .consolas{
     background-color: red;
 }
+.consolas nav{
+    margin-top: 5em;
+}
 .consolas .imagenes img{
     border: 0;
 }
@@ -226,6 +235,7 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 @media (min-width:400px) {
     .consolas {
         display: grid;
@@ -267,8 +277,8 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     .consolas{
-        background: rgb(250,5,5);
-        background: linear-gradient(135deg, rgba(250,5,5,1) 25%, rgba(200,0,255,1) 50%, rgba(50,40,255,1) 75%, rgba(0,28,255,1) 100%);
+        background: rgb(255,0,0);
+        background: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 0%, rgba(125,0,250,1) 50%, rgba(255,0,0,1) 100%);
     }
 }
 
@@ -293,22 +303,23 @@ footer {
 
 
 
-/*seccion de shooters, racings y rpg*/
+/*seccion de shooters, racings y rolplay*/
 .juegos{
-    margin-top: 6em;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color: blueviolet;
+}
+.juegos nav{
+    margin-top: 5em;
+}
+.juegos main{
+    margin-top: 1em;
 }
 .juegos .info img{
     margin-bottom: 15px;
     width: 200px;
     height: 300px;
 }
-.shooters{
-    background-color: aqua;
-}
-.fondo{
-    background-color: #2bff00;
+.portadas{
+    margin: 10px;
 }
 .portadas img{
     height: 200px;
@@ -323,10 +334,6 @@ footer {
 }
 
 @media (min-width:600px){
-    .fondo{
-        background: rgb(0,250,8);
-        background: linear-gradient(135deg, rgba(0,250,8,1) 25%, rgba(50,40,255,1) 75%, rgba(0,28,255,1) 100%);
-    }
     .juegos .imagenes {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -334,6 +341,10 @@ footer {
     .portadas img{
         height: 300px;
         width: 250px;
+    }
+    .juegos{
+        background: rgb(255,0,0);
+        background: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 0%, rgba(125,0,250,1) 50%, rgba(255,0,0,1) 100%);
     }
     
 }
@@ -346,8 +357,4 @@ footer {
     .juegos aside{
         flex-direction: row-reverse;
     }
-}
-
-.imagenes img:hover{
-    
 }
