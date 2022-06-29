@@ -1,0 +1,240 @@
+@import "partials/nav";
+@import "partials/aside";
+@import "base/base";
+@import "partials/index";
+@import "partials/contacto";
+@import "partials/header";
+
+/*definiendo areas*/
+header {
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50px;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 25px;
+}
+
+/*acomodando areas*/
+
+.index {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "section"
+        "aside"
+        "footer";
+    gap: 10px;
+    margin: 10px;
+}
+
+@media (min-width:400px) {
+    .index {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "section"
+            "aside"
+            "footer";
+    }
+    .redes div img{
+        height: 50px;
+        width: 50px;
+    }
+    .imagenes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:600px) {
+    .index {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "section"
+            "aside"
+            "footer";
+        }
+        .redes div img{
+            height: 75px;
+            width: 75px;
+        }
+        .imagenes{
+            grid-template-columns: 1fr 1fr;
+        }
+        .imagenes img {
+        width: 250px;
+        height: 200px;
+        }
+}
+
+@media (min-width:1024px) {
+    .index {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main section"
+            "aside aside"
+            "footer footer";
+            grid-template-rows: auto;
+        }
+        .imagenes{
+            grid-template-columns: 1fr;
+        }
+}
+
+
+
+
+
+/*seccion de consolas*/
+.consolas{
+    background-color: red;
+}
+.consolas .imagenes img{
+    border: 0;
+}
+.consolasMargin{
+    margin-top: 6em;
+}
+.info{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (min-width:400px) {
+    .consolas {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        gap: 10px;
+    }
+    .imagenesConsolas {
+        display: flex;
+        flex-direction: row;
+        display: grid;
+    }   
+    .consolas .imagenes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:600px) {
+    .consolas {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+    .consolas .redes {
+        display: flex;
+        flex-direction: row;
+    }
+    .consolas .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1024px) {
+    .consolas {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+    
+    .consolas .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+/*seccion de shooters, racings y rolplay*/
+.juegos .info img{
+    margin-bottom: 15px;
+    width: 200px;
+    height: 300px;
+}
+.portadas{
+    margin: 10px;
+}
+.portadas img{
+    height: 200px;
+    width: 150px;
+}
+.juegos nav{
+    margin-top: 10px;
+}
+
+@media (min-width:400px) {
+    .juegos .imagenes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:600px){
+    .juegos .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+    .portadas img{
+        height: 300px;
+        width: 250px;
+    }
+    
+}
+
+@media (min-width:1024px){
+    .juegos .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .juegos aside{
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    div{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 5px 5px rebeccapurple;
+        &:hover {
+            background: blueviolet;
+            color: black;
+        }
+        &:active{
+            background-color: gray;
+            color: black;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+    }
+}
