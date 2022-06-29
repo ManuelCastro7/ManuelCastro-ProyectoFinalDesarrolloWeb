@@ -4,6 +4,9 @@
 @import "partials/index";
 @import "partials/contacto";
 @import "partials/header";
+@import "partials/consolas";
+@import "partials/juegos";
+@import "partials/productos";
 
 /*definiendo areas*/
 header {
@@ -16,6 +19,8 @@ nav{
 
 main {
     grid-area: main;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 aside {
@@ -61,9 +66,13 @@ footer {
             "aside"
             "footer";
     }
-    .redes div img{
-        height: 50px;
-        width: 50px;
+    .redes{
+        div{
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
     }
     .imagenes {
         display: grid;
@@ -82,16 +91,24 @@ footer {
             "aside"
             "footer";
         }
-        .redes div img{
-            height: 75px;
-            width: 75px;
+        header{
+            background: rgb(250,0,100);
+            background: linear-gradient(135deg, rgba(250,0,100,1) 0%, rgba(100,0,250,1) 75%);
+        }
+        .redes{
+            div{
+                img{
+                    height: 75px;
+                    width: 75px;
+                }
+            }
         }
         .imagenes{
             grid-template-columns: 1fr 1fr;
-        }
-        .imagenes img {
-        width: 250px;
-        height: 200px;
+            img {
+                width: 250px;
+                height: 200px;
+                }
         }
 }
 
@@ -116,19 +133,6 @@ footer {
 
 
 /*seccion de consolas*/
-.consolas{
-    background-color: red;
-}
-.consolas .imagenes img{
-    border: 0;
-}
-.consolasMargin{
-    margin-top: 6em;
-}
-.info{
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
 @media (min-width:400px) {
     .consolas {
@@ -140,15 +144,19 @@ footer {
             "aside"
             "footer";
         gap: 10px;
+        .imagenes {
+            display: grid;
+            grid-template-columns: 1fr;
+            img {
+                width: 300px;
+                height: 250px;
+                }
+        }
     }
     .imagenesConsolas {
         display: flex;
         flex-direction: row;
         display: grid;
-    }   
-    .consolas .imagenes {
-        display: grid;
-        grid-template-columns: 1fr;
     }
 }
 
@@ -162,13 +170,15 @@ footer {
             "aside"
             "footer";
     }
-    .consolas .redes {
-        display: flex;
-        flex-direction: row;
-    }
-    .consolas .imagenes {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .consolas{
+        .redes {
+            display: flex;
+            flex-direction: row;
+        }
+        .imagenes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 
@@ -181,60 +191,55 @@ footer {
             "main"
             "aside"
             "footer";
+        .imagenes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
-    
-    .consolas .imagenes {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
 
 
 
 
 
-/*seccion de shooters, racings y rolplay*/
-.juegos .info img{
-    margin-bottom: 15px;
-    width: 200px;
-    height: 300px;
-}
-.portadas{
-    margin: 10px;
-}
-.portadas img{
-    height: 200px;
-    width: 150px;
-}
-.juegos nav{
-    margin-top: 10px;
-}
+/*seccion de juegos*/
 
 @media (min-width:400px) {
-    .juegos .imagenes {
-        display: grid;
-        grid-template-columns: 1fr;
+    .juegos{
+        .imagenes {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 }
 
 @media (min-width:600px){
-    .juegos .imagenes {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }  
-    .portadas img{
-        height: 300px;
-        width: 250px;
+    .juegos{
+        .imagenes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        nav{
+            margin-top: 25px;
+        }
+    }
+    .portadas{
+        img{
+            height: 300px;
+            width: 250px;
+        }
     }
     
 }
 
 @media (min-width:1024px){
-    .juegos .imagenes {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .juegos aside{
-        flex-direction: row-reverse;
+    .juegos{
+        .imagenes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        aside{
+            flex-direction: row-reverse;
+        }
     }
 }
