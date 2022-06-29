@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-zonazero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-patch scss scss/style.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelCastro7/Proyecto-ZonaZero.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuelCastro7/Proyecto-ZonaZero/issues"
+  },
+  "homepage": "https://github.com/ManuelCastro7/Proyecto-ZonaZero#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  }
+}
