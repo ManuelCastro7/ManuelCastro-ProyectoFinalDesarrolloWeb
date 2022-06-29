@@ -151,10 +151,6 @@ header {
       .productos .cards section:hover {
         transform: scale(1.1);
         box-shadow: 0px 0px 5px 5px #fa00fa; }
-      .productos .cards section img {
-        width: 300px;
-        height: 250px;
-        border-radius: 50px; }
       .productos .cards section div h3 {
         color: black; }
       .productos .cards section div h4 {
@@ -264,7 +260,12 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr; } }
 
-/*seccion de juegos*/
+/*secciones otras*/
+.cards img {
+  height: 150px;
+  width: 200px;
+  border-radius: 50px; }
+
 @media (min-width: 400px) {
   .juegos .imagenes {
     display: grid;
@@ -278,7 +279,11 @@ footer {
     margin-top: 25px; }
   .portadas img {
     height: 300px;
-    width: 250px; } }
+    width: 250px; }
+  .cards img {
+    height: 300px;
+    width: 350px;
+    border-radius: 50px; } }
 
 @media (min-width: 1024px) {
   .juegos .imagenes {
