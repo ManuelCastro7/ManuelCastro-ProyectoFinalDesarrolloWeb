@@ -1,12 +1,17 @@
+/*partials*/
 @import "partials/nav";
 @import "partials/aside";
 @import "base/base";
-@import "partials/index";
-@import "partials/contacto";
-@import "partials/header";
-@import "partials/consolas";
 @import "partials/juegos";
+@import "partials/header";
+
+/*sections*/
+@import "partials/consolas";
 @import "partials/productos";
+@import "sections/index";
+@import "sections/contacto";
+
+
 
 /*definiendo areas*/
 header {
