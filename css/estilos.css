@@ -1,3 +1,32 @@
+/*base*/
+body {
+  background: url(../img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: white;
+  padding: 0;
+  margin: 0%; }
+  body p {
+    text-align: start; }
+  body h2 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  body h3 {
+    margin-bottom: 5px;
+    color: #6400fa;
+    background-color: white;
+    border-radius: 50px; }
+
+.efectoHover:hover, .redes div:hover, .imagenes img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 5px #fa00fa; }
+
+/*partials*/
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -31,9 +60,6 @@ nav {
     padding: 10px;
     margin-top: 25px;
     background-color: white; }
-    .redes div:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 5px 5px #fa00fa; }
 
 body {
   background: url(../img/fondo.jpg);
@@ -58,56 +84,6 @@ body {
     background-color: white;
     border-radius: 50px; }
 
-.index .imagenes {
-  justify-content: space-evenly;
-  align-items: center; }
-
-.index .textos {
-  border: solid 5px;
-  border-radius: 50px;
-  padding: 10px;
-  background-color: rgba(250, 0, 250, 0.5); }
-  .index .textos div {
-    margin-top: 25px; }
-    .index .textos div h3 {
-      margin-bottom: 5px; }
-
-.imagenes {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  display: grid; }
-  .imagenes img {
-    width: 200px;
-    height: 150px;
-    border-radius: 50px;
-    border: 5px solid white;
-    margin-top: 10px;
-    margin-bottom: 25px; }
-    .imagenes img:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 5px 5px #fa00fa; }
-
-.formulario {
-  width: 80%;
-  display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-header h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold; }
-
-nav div a {
-  color: black;
-  text-decoration: none;
-  font-weight: bolder; }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -120,6 +96,7 @@ header {
     letter-spacing: 10px;
     text-shadow: black 5px 5px 5px; }
 
+/*sections*/
 .consolas main .info {
   margin-left: 10px;
   margin-right: 10px; }
@@ -128,17 +105,6 @@ header {
 
 .consolasMargin {
   margin-top: 6em; }
-
-.juegos .info img {
-  margin-bottom: 15px;
-  width: 200px;
-  height: 300px; }
-
-.portadas {
-  margin: 10px; }
-  .portadas img {
-    height: 200px;
-    width: 150px; }
 
 .productos {
   border: solid 5px;
@@ -172,6 +138,70 @@ header {
       .productos .click a:hover {
         box-shadow: 0px 0px 5px 5px #fa00fa; }
 
+.index .imagenes {
+  justify-content: space-evenly;
+  align-items: center; }
+
+.index .textos {
+  border: solid 5px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: rgba(250, 0, 250, 0.5); }
+  .index .textos div {
+    margin-top: 25px; }
+    .index .textos div h3 {
+      margin-bottom: 5px; }
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  display: grid; }
+  .imagenes img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+    border: 5px solid white;
+    margin-top: 10px;
+    margin-bottom: 25px; }
+
+.juegos .info img {
+  margin-bottom: 15px;
+  width: 200px;
+  height: 300px; }
+
+.portadas {
+  margin: 10px; }
+  .portadas img {
+    height: 200px;
+    width: 150px; }
+  .portadas .portadaRose {
+    border: 5px solid #fa00fa;
+    border-radius: 50px; }
+  .portadas .portadaBlue {
+    border: 5px solid #6400fa;
+    border-radius: 50px; }
+
+.formulario {
+  width: 80%;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold; }
+
+nav div a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder; }
+
 /*definiendo areas*/
 header {
   grid-area: header; }
@@ -201,24 +231,14 @@ footer {
 /*acomodando areas*/
 .index {
   display: grid;
-  grid-template-areas: "header"
- "nav"
- "main"
- "section"
- "aside"
- "footer";
+  grid-template-areas: "header" "nav" "main" "section" "aside" "footer";
   gap: 10px;
   margin: 10px; }
 
 @media (min-width: 400px) {
   .index {
     display: grid;
-    grid-template-areas: "header"
- "nav"
- "main"
- "section"
- "aside"
- "footer"; }
+    grid-template-areas: "header" "nav" "main" "section" "aside" "footer"; }
   .redes div img {
     height: 50px;
     width: 50px; }
@@ -229,12 +249,7 @@ footer {
 @media (min-width: 600px) {
   .index {
     display: grid;
-    grid-template-areas: "header"
- "nav"
- "main"
- "section"
- "aside"
- "footer"; }
+    grid-template-areas: "header" "nav" "main" "section" "aside" "footer"; }
   header {
     background: #fa0064;
     background: linear-gradient(135deg, #fa0064 0%, #6400fa 75%); }
@@ -250,11 +265,7 @@ footer {
 @media (min-width: 1024px) {
   .index {
     display: grid;
-    grid-template-areas: "header header"
- "nav nav"
- "main section"
- "aside aside"
- "footer footer";
+    grid-template-areas: "header header" "nav nav" "main section" "aside aside" "footer footer";
     grid-template-rows: auto; }
   .imagenes {
     grid-template-columns: 1fr; } }
@@ -263,11 +274,7 @@ footer {
 @media (min-width: 400px) {
   .consolas {
     display: grid;
-    grid-template-areas: "header"
- "nav"
- "main"
- "aside"
- "footer";
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
     gap: 10px; }
     .consolas .imagenes {
       display: grid;
@@ -283,11 +290,7 @@ footer {
 @media (min-width: 600px) {
   .consolas {
     display: grid;
-    grid-template-areas: "header"
- "nav"
- "main"
- "aside"
- "footer"; }
+    grid-template-areas: "header" "nav" "main" "aside" "footer"; }
   .consolas .redes {
     display: flex;
     flex-direction: row; }
@@ -298,11 +301,7 @@ footer {
 @media (min-width: 1024px) {
   .consolas {
     display: grid;
-    grid-template-areas: "header"
- "nav"
- "main"
- "aside"
- "footer"; }
+    grid-template-areas: "header" "nav" "main" "aside" "footer"; }
     .consolas .imagenes {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr; } }
