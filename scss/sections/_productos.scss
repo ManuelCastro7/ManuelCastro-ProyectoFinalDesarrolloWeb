@@ -1,33 +1,65 @@
 .productos{
-    border: solid 5px;
-    border-radius: 50px;
-    padding: 25px;
-    background-color: rgba(250,0,250,0.5);
-    .cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        section{
-            margin: 10px;
-            margin-bottom: 25px;
-            background-color: white;
-            border: 10px solid $colorBlue;
-            &:hover{
-                transform: scale(1.1);
-                box-shadow: 0px 0px 5px 5px rgb(250, 0, 250);
-            }
-            div{
-                h3{
-                    color: black;
+    .productoConsola{
+        border: solid 5px;
+        border-radius: 50px;
+        padding: 25px;
+        background-color: rgba(250,0,250,0.5);
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            section{
+                margin: 10px;
+                margin-bottom: 25px;
+                background-color: white;
+                border: 10px solid $colorBlue;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 5px 5px rgb(250, 0, 250);
                 }
-                h4{
-                    color: black;
+                div{
+                    h3{
+                        color: black;
+                    }
+                    h4{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .productoJoystick{
+        margin-top: 25px;
+        border: solid 5px;
+        border-radius: 50px;
+        padding: 25px;
+        background-color: rgba(250,0,250,0.5);
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            section{
+                margin: 10px;
+                margin-bottom: 25px;
+                background-color: white;
+                border: 10px solid $colorBlue;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 5px 5px rgb(250, 0, 250);
+                }
+                div{
+                    h3{
+                        color: black;
+                    }
+                    h4{
+                        color: black;
+                    }
                 }
             }
         }
     }
     .click{
-        margin-top: 15px;
+        margin-top: 25px;
         margin-bottom: 15px;
         a{
             color: black;

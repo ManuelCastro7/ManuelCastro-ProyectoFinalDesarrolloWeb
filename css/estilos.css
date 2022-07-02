@@ -12,6 +12,8 @@ body {
   margin: 0%; }
   body p {
     text-align: start; }
+  body h1 {
+    text-transform: uppercase; }
   body h2 {
     margin-bottom: 50px;
     text-transform: uppercase;
@@ -74,6 +76,8 @@ body {
   margin: 0%; }
   body p {
     text-align: start; }
+  body h1 {
+    text-transform: uppercase; }
   body h2 {
     margin-bottom: 50px;
     text-transform: uppercase;
@@ -108,38 +112,62 @@ header {
 .consolasMargin {
   margin-top: 6em; }
 
-.productos {
+.productos .productoConsola {
   border: solid 5px;
   border-radius: 50px;
   padding: 25px;
   background-color: rgba(250, 0, 250, 0.5); }
-  .productos .cards {
+  .productos .productoConsola .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    .productos .cards section {
+    .productos .productoConsola .cards section {
       margin: 10px;
       margin-bottom: 25px;
       background-color: white;
       border: 10px solid #6400fa; }
-      .productos .cards section:hover {
+      .productos .productoConsola .cards section:hover {
         transform: scale(1.1);
         box-shadow: 0px 0px 5px 5px #fa00fa; }
-      .productos .cards section div h3 {
+      .productos .productoConsola .cards section div h3 {
         color: black; }
-      .productos .cards section div h4 {
+      .productos .productoConsola .cards section div h4 {
         color: black; }
-  .productos .click {
-    margin-top: 15px;
-    margin-bottom: 15px; }
-    .productos .click a {
-      color: black;
-      text-decoration: none;
+
+.productos .productoJoystick {
+  margin-top: 25px;
+  border: solid 5px;
+  border-radius: 50px;
+  padding: 25px;
+  background-color: rgba(250, 0, 250, 0.5); }
+  .productos .productoJoystick .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .productos .productoJoystick .cards section {
+      margin: 10px;
+      margin-bottom: 25px;
       background-color: white;
-      border-radius: 50px;
-      padding: 10px; }
-      .productos .click a:hover {
+      border: 10px solid #6400fa; }
+      .productos .productoJoystick .cards section:hover {
+        transform: scale(1.1);
         box-shadow: 0px 0px 5px 5px #fa00fa; }
+      .productos .productoJoystick .cards section div h3 {
+        color: black; }
+      .productos .productoJoystick .cards section div h4 {
+        color: black; }
+
+.productos .click {
+  margin-top: 25px;
+  margin-bottom: 15px; }
+  .productos .click a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px; }
+    .productos .click a:hover {
+      box-shadow: 0px 0px 5px 5px #fa00fa; }
 
 .index .imagenes {
   justify-content: space-evenly;
