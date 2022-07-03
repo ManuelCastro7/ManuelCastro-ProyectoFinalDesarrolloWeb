@@ -85,7 +85,7 @@ footer {
             }
         }
     }
-    .imagenes {
+    .imagenesIndex {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -114,7 +114,7 @@ footer {
                 }
             }
         }
-        .imagenes{
+        .imagenesIndex{
             grid-template-columns: 1fr 1fr;
             img {
                 width: 250px;
@@ -134,7 +134,7 @@ footer {
             "footer footer";
             grid-template-rows: auto;
         }
-        .imagenes{
+        .imagenesIndex{
             grid-template-columns: 1fr;
         }
 }
