@@ -1,22 +1,13 @@
 .juegos{
-    .info{
+    .portadas{
+        h3{
+            color: &colorRose;
+            font-size: 25px;
+        }
         img{
             margin-bottom: 15px;
-            width: 200px;
+            width: 250px;
             height: 300px;
         }
-    }
-}
-.portadas{
-    margin: 10px;
-    img{
-        height: 200px;
-        width: 150px;
-    }
-    .portadaRose{
-        @include borde($colorRose);
-    }
-    .portadaBlue{
-        @include borde($colorBlue);
     }
 }
