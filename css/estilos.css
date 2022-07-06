@@ -11,7 +11,8 @@ body {
   padding: 0;
   margin: 0%; }
   body p {
-    text-align: start; }
+    text-align: start;
+    font-size: 20px; }
   body h1 {
     text-transform: uppercase; }
   body h2 {
@@ -73,7 +74,8 @@ body {
   padding: 0;
   margin: 0%; }
   body p {
-    text-align: start; }
+    text-align: start;
+    font-size: 20px; }
   body h1 {
     text-transform: uppercase; }
   body h2 {
@@ -100,6 +102,10 @@ header {
 
 /*sections*/
 .consolas main .info {
+  background-color: black;
+  border: solid #fa00fa;
+  border-radius: 10px;
+  padding: 10px;
   margin-left: 10px;
   margin-right: 10px; }
   .consolas main .info h3 {
@@ -211,20 +217,27 @@ header {
     margin-top: 10px;
     margin-bottom: 25px; }
 
-.juegos .portadas h3 {
-  color: .juegos .portadas h3 colorRose;
-  font-size: 25px; }
-
-.juegos .portadas img {
-  margin-bottom: 15px;
-  width: 250px;
-  height: 300px; }
+.cards .imagenes {
+  gap: 10px; }
+  .cards .imagenes .portadas {
+    background-color: black;
+    border: solid #fa00fa;
+    border-radius: 10px;
+    padding: 5px; }
+    .cards .imagenes .portadas img {
+      margin-bottom: 15px;
+      width: 250px;
+      height: 300px; }
+    .cards .imagenes .portadas h3 {
+      color: #fa00fa; }
 
 .formulario {
   width: 80%;
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 50px; }
+  .formulario h1 {
+    margin-bottom: 25px; }
 
 nav div a {
   color: black;

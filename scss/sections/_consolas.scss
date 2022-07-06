@@ -1,6 +1,10 @@
 .consolas{
     main{
         .info{
+            background-color: black;
+            border: solid $colorRose;
+            border-radius: 10px;
+            padding: 10px;
             margin-left: 10px;
             margin-right: 10px;
             h3{
