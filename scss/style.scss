@@ -63,7 +63,6 @@ footer {
         "aside"
         "footer";
     gap: 10px;
-    margin: 10px;
 }
 
 @media (min-width:400px) {
@@ -145,6 +144,18 @@ footer {
 
 /*seccion de consolas*/
 
+.consolas{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "section"
+        "aside"
+        "footer";
+    gap: 10px;
+}
+
 @media (min-width:400px) {
     .consolas {
         display: grid;
@@ -214,6 +225,17 @@ footer {
 
 
 /*secciones otras*/
+.juegos{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "section"
+        "aside"
+        "footer";
+    gap: 10px;
+}
 .cards{
     img {
         height: 150px;
@@ -236,9 +258,6 @@ footer {
         .imagenes {
             display: grid;
             grid-template-columns: 1fr 1fr;
-        }
-        nav{
-            margin-top: 15px;
         }
     }
     .portadas{
