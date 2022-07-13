@@ -15,9 +15,10 @@
         }
     }
     .textos{
-        border: solid 5px;
+        box-shadow: 0px 0px 5px 5px $colorRose;
         border-radius: 50px;
         padding: 10px;
+        padding-top: 0px;
         background-color: black;
         padding-bottom: 15px;
         div{
