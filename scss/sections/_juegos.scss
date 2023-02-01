@@ -4,7 +4,6 @@
         .portadas{
             background-color: black;
             border: white solid 5px;
-            border-radius: 25px;
             padding: 5px;
             padding-top: 25px;
             img{
@@ -14,6 +13,9 @@
             }
             h3{
                 color: $colorRose;
+            }
+            p{
+                text-align: initial;
             }
         }
     }

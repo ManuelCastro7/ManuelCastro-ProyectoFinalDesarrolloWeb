@@ -40,8 +40,7 @@ nav {
     background-color: white;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    border-radius: 10px; }
+    padding: 10px 20px; }
     nav div:hover {
       box-shadow: 0px 0px 5px 5px #fa00fa;
       color: black; }
@@ -55,12 +54,16 @@ nav {
 
 .redes {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
   .redes div {
     border-radius: 50px;
     padding: 10px;
     margin-top: 25px;
     background-color: white; }
+    .redes div a img {
+      width: 50px;
+      height: 50px; }
 
 body {
   background: url(../img/fondo.jpg);
@@ -100,19 +103,13 @@ header {
   gap: 20px; }
   .consolas main section .info {
     background-color: black;
-    border: white solid 5px;
-    border-radius: 25px;
-    padding: 10px; }
+    border: white solid 5px; }
     .consolas main section .info h3 {
       margin-top: 0%;
       color: #fa00fa; }
     .consolas main section .info p {
-      font-size: 20px; }
-    .consolas main section .info .imagenes img {
-      border: 0; }
-
-.consolasMargin {
-  margin-top: 6em; }
+      font-size: 20px;
+      text-align: initial; }
 
 .productos {
   margin: 0%; }
@@ -125,7 +122,7 @@ header {
     .productos .producto .cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: center;
       gap: 20px; }
       .productos .producto .cards section {
         margin: 10px;
@@ -134,48 +131,40 @@ header {
         .productos .producto .cards section div h3 {
           color: black; }
         .productos .producto .cards section div h4 {
-          color: black; }
-        .productos .producto .cards section div .click {
-          margin-top: 25px;
-          margin-bottom: 15px; }
-          .productos .producto .cards section div .click a {
-            background-color: black;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            padding: 10px; }
-            .productos .producto .cards section div .click a:hover {
-              box-shadow: 0px 0px 5px 5px #fa00fa; }
+          color: black;
+          font-weight: 900;
+          font-family: cursive; }
+        .productos .producto .cards section div .click button {
+          background-color: black;
+          color: white;
+          padding: 10px;
+          cursor: pointer; }
+          .productos .producto .cards section div .click button:hover {
+            box-shadow: 0px 0px 5px 5px #fa00fa; }
 
 .index {
   width: 100%; }
-  .index .imagenesIndex {
-    justify-content: space-evenly;
-    align-items: center; }
-    .index .imagenesIndex div img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50px;
-      border: 5px solid white;
-      margin-top: 10px;
-      margin-bottom: 25px; }
   .index .textos {
-    border: solid 5px white;
-    border-radius: 50px;
-    padding: 10px;
-    padding-top: 0px;
+    margin: 0%;
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    padding: 20px;
     background-color: black;
     padding-bottom: 15px; }
     .index .textos div {
-      margin-top: 45px; }
+      align-items: center; }
+      .index .textos div .infoGame {
+        gap: 10px; }
       .index .textos div h3 {
         font-size: 25px;
         color: #fa00fa;
         border-bottom: 5px solid #fa00fa; }
       .index .textos div p {
-        font-size: 20px;
-        margin-top: 0%;
-        margin-bottom: 0%; }
+        text-align: initial;
+        font-size: 20px; }
+      .index .textos div img {
+        width: 250px;
+        height: 200px; }
 
 .imagenes {
   display: flex;
@@ -185,7 +174,6 @@ header {
   .imagenes img {
     width: 200px;
     height: 150px;
-    border-radius: 50px;
     margin-top: 10px;
     margin-bottom: 25px; }
 
@@ -194,7 +182,6 @@ header {
   .cards .imagenes .portadas {
     background-color: black;
     border: white solid 5px;
-    border-radius: 25px;
     padding: 5px;
     padding-top: 25px; }
     .cards .imagenes .portadas img {
@@ -203,6 +190,8 @@ header {
       height: 300px; }
     .cards .imagenes .portadas h3 {
       color: #fa00fa; }
+    .cards .imagenes .portadas p {
+      text-align: initial; }
 
 /*definiendo areas*/
 header {
@@ -219,13 +208,6 @@ main {
 aside {
   grid-area: aside; }
 
-section {
-  grid-area: section;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border-radius: 50px; }
-
 footer {
   grid-area: footer;
   margin-top: 25px; }
@@ -233,19 +215,20 @@ footer {
 /*acomodando areas*/
 .index {
   display: grid;
-  grid-template-areas: "header" "nav" "main" "section" "aside" "footer";
+  grid-template-areas: "header" "nav" "main" "aside" "footer";
   gap: 10px; }
 
 @media (min-width: 400px) {
   .index {
     display: grid;
-    grid-template-areas: "header" "nav" "main" "section" "aside" "footer"; }
+    grid-template-areas: "header" "nav" "main" "aside" "footer"; }
   .redes div img {
     height: 50px;
     width: 50px; }
-  .imagenesIndex {
-    display: grid;
-    grid-template-columns: 1fr; } }
+  .infoGame {
+    display: flex;
+    gap: 10px;
+    flex-direction: column; } }
 
 @media (min-width: 768px) {
   nav {
@@ -253,26 +236,16 @@ footer {
     flex-direction: row; }
   .index {
     display: grid;
-    grid-template-areas: "header" "nav" "main" "section" "aside" "footer"; }
+    grid-template-areas: "header" "nav" "main" "aside" "footer"; }
   header {
     background: #fa0064;
     background: linear-gradient(135deg, #fa0064 0%, #6400fa 75%); }
   .redes div img {
     height: 75px;
     width: 75px; }
-  .imagenesIndex {
-    grid-template-columns: 1fr 1fr; }
-    .imagenesIndex img {
-      width: 250px;
-      height: 200px; } }
-
-@media (min-width: 1024px) {
-  .index {
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "main section" "aside aside" "footer footer";
-    grid-template-rows: auto; }
-  .imagenesIndex {
-    grid-template-columns: 1fr; } }
+  .infoGame {
+    display: flex;
+    flex-direction: row; } }
 
 /*seccion de consolas*/
 .consolas {
@@ -323,8 +296,7 @@ footer {
 
 .cards img {
   height: 150px;
-  width: 200px;
-  border-radius: 50px; }
+  width: 200px; }
 
 @media (min-width: 400px) {
   .juegos .imagenes {
@@ -340,8 +312,7 @@ footer {
     width: 250px; }
   .cards img {
     height: 300px;
-    width: 350px;
-    border-radius: 50px; } }
+    width: 350px; } }
 
 @media (min-width: 1024px) {
   .juegos .imagenes {

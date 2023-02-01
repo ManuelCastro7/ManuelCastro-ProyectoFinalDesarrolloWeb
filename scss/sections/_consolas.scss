@@ -5,24 +5,15 @@
             .info{
                 background-color: black;
                 border: white solid 5px;
-                border-radius: 25px;
-                padding: 10px;
                 h3{
                     margin-top: 0%;
                     color: $colorRose;
                 }
                 p{
                     font-size: 20px;
-                }
-                .imagenes{
-                    img{
-                        border: 0;
-                    }
+                    text-align: initial;
                 }
             }
         }
     }
-}
-.consolasMargin{
-    margin-top: 6em;
 }
