@@ -3,7 +3,7 @@
         gap: 20px;
         .portadas{
             background-color: black;
-            border: solid $colorRose;
+            border: white solid 5px;
             border-radius: 25px;
             padding: 5px;
             padding-top: 25px;
@@ -13,9 +13,8 @@
                 height: 300px;
             }
             h3{
-                color: rgb(250,0,250);
+                color: $colorRose;
             }
         }
     }
 }
-

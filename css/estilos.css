@@ -10,21 +10,19 @@ body {
   color: white;
   padding: 0;
   margin: 0%; }
-  body p {
-    text-align: start;
-    font-size: 20px;
-    font-weight: 100; }
   body h1 {
-    text-transform: uppercase; }
+    font-family: 'Zen Dots', cursive;
+    letter-spacing: 5px;
+    text-shadow: black 5px 5px 5px; }
   body h2 {
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+    font-weight: 900;
+    font-size: 30px;
+    font-family: sans-serif; }
   body h3 {
     color: body h3 colorRose;
     font-size: 25px; }
 
-.efectoHover:hover, .redes div:hover, .imagenes img:hover {
+.efectoHover:hover, .redes div:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 5px 5px #fa00fa; }
 
@@ -33,22 +31,19 @@ nav {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 25px;
-  column-gap: 15px;
-  flex-direction: column; }
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
   nav div {
     justify-content: center;
     background-color: white;
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 5px 5px #fa00fa; }
+    border-radius: 10px; }
     nav div:hover {
-      background: #fa00fa;
+      box-shadow: 0px 0px 5px 5px #fa00fa;
       color: black; }
     nav div:active {
       background-color: #9600fa;
@@ -65,8 +60,7 @@ nav {
     border-radius: 50px;
     padding: 10px;
     margin-top: 25px;
-    background-color: white;
-    box-shadow: 0px 0px 5px 5px #fa00fa; }
+    background-color: white; }
 
 body {
   background: url(../img/fondo.jpg);
@@ -79,16 +73,14 @@ body {
   color: white;
   padding: 0;
   margin: 0%; }
-  body p {
-    text-align: start;
-    font-size: 20px;
-    font-weight: 100; }
   body h1 {
-    text-transform: uppercase; }
+    font-family: 'Zen Dots', cursive;
+    letter-spacing: 5px;
+    text-shadow: black 5px 5px 5px; }
   body h2 {
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+    font-weight: 900;
+    font-size: 30px;
+    font-family: sans-serif; }
   body h3 {
     color: body h3 colorRose;
     font-size: 25px; }
@@ -102,17 +94,13 @@ header {
   border-bottom: white solid 5px;
   background-color: #fa00c8;
   margin: 0%; }
-  header .titulo {
-    font-size: 35px;
-    letter-spacing: 10px;
-    text-shadow: black 5px 5px 5px; }
 
 /*sections*/
 .consolas main section {
   gap: 20px; }
   .consolas main section .info {
     background-color: black;
-    border: solid #fa00fa;
+    border: white solid 5px;
     border-radius: 25px;
     padding: 10px; }
     .consolas main section .info h3 {
@@ -126,73 +114,38 @@ header {
 .consolasMargin {
   margin-top: 6em; }
 
-.productos .productoConsola {
-  border: solid 5px;
-  border-radius: 35px;
-  background-color: rgba(150, 0, 150, 0.8);
-  padding-bottom: 30px; }
-  .productos .productoConsola .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px; }
-    .productos .productoConsola .cards section {
-      margin: 10px;
-      background-color: white;
-      border: 10px solid white; }
-      .productos .productoConsola .cards section:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 5px 5px #fa00fa; }
-      .productos .productoConsola .cards section div h3 {
-        color: black; }
-      .productos .productoConsola .cards section div h4 {
-        color: black; }
-      .productos .productoConsola .cards section div .click {
-        margin-top: 25px;
-        margin-bottom: 15px; }
-        .productos .productoConsola .cards section div .click a {
-          background-color: black;
-          color: white;
-          text-decoration: none;
-          border-radius: 50px;
-          padding: 10px; }
-          .productos .productoConsola .cards section div .click a:hover {
-            box-shadow: 0px 0px 5px 5px #fa00fa; }
-
-.productos .productoJoystick {
-  margin-top: 25px;
-  border: solid 5px;
-  border-radius: 50px;
-  padding: 25px;
-  background-color: rgba(250, 0, 250, 0.5); }
-  .productos .productoJoystick .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px; }
-    .productos .productoJoystick .cards section {
-      margin: 10px;
-      background-color: white;
-      border: 10px solid white;
-      align-items: center; }
-      .productos .productoJoystick .cards section:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 5px 5px #fa00fa; }
-      .productos .productoJoystick .cards section div h3 {
-        color: black; }
-      .productos .productoJoystick .cards section div h4 {
-        color: black; }
-      .productos .productoJoystick .cards section div .click {
-        margin-top: 25px;
-        margin-bottom: 15px; }
-        .productos .productoJoystick .cards section div .click a {
-          background-color: black;
-          color: white;
-          text-decoration: none;
-          border-radius: 50px;
-          padding: 10px; }
-          .productos .productoJoystick .cards section div .click a:hover {
-            box-shadow: 0px 0px 5px 5px #fa00fa; }
+.productos {
+  margin: 0%; }
+  .productos .producto {
+    border-top: solid 5px white;
+    border-bottom: solid 5px;
+    background: #fa0064;
+    background: linear-gradient(135deg, #fa0064 0%, #6400fa 75%);
+    margin-bottom: 30px; }
+    .productos .producto .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 20px; }
+      .productos .producto .cards section {
+        margin: 10px;
+        background-color: white;
+        border: 10px solid white; }
+        .productos .producto .cards section div h3 {
+          color: black; }
+        .productos .producto .cards section div h4 {
+          color: black; }
+        .productos .producto .cards section div .click {
+          margin-top: 25px;
+          margin-bottom: 15px; }
+          .productos .producto .cards section div .click a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            padding: 10px; }
+            .productos .producto .cards section div .click a:hover {
+              box-shadow: 0px 0px 5px 5px #fa00fa; }
 
 .index {
   width: 100%; }
@@ -207,7 +160,7 @@ header {
       margin-top: 10px;
       margin-bottom: 25px; }
   .index .textos {
-    box-shadow: 0px 0px 5px 5px #fa00fa;
+    border: solid 5px white;
     border-radius: 50px;
     padding: 10px;
     padding-top: 0px;
@@ -233,7 +186,6 @@ header {
     width: 200px;
     height: 150px;
     border-radius: 50px;
-    border: 5px solid white;
     margin-top: 10px;
     margin-bottom: 25px; }
 
@@ -241,7 +193,7 @@ header {
   gap: 20px; }
   .cards .imagenes .portadas {
     background-color: black;
-    border: solid #fa00fa;
+    border: white solid 5px;
     border-radius: 25px;
     padding: 5px;
     padding-top: 25px; }
@@ -251,20 +203,6 @@ header {
       height: 300px; }
     .cards .imagenes .portadas h3 {
       color: #fa00fa; }
-
-.formulario {
-  display: inline-block;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  margin-left: 10%;
-  margin-right: 10%; }
-  .formulario h1 {
-    margin-bottom: 25px; }
-
-nav div a {
-  color: black;
-  text-decoration: none;
-  font-weight: bolder; }
 
 /*definiendo areas*/
 header {
