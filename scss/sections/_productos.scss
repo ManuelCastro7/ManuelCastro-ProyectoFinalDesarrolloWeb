@@ -1,11 +1,10 @@
 .productos{
-    margin: 0%;
+    margin: 0px 20px 10px 20px;
     .producto{
         border-top: solid 5px white;
         border-bottom: solid 5px;
         background: rgb(250,0,100);
         background: linear-gradient(135deg, rgba(250,0,100,1) 0%, rgba(100,0,250,1) 75%);
-        margin-bottom: 30px;
         .cards{
             display: flex;
             flex-wrap: wrap;
@@ -31,9 +30,6 @@
                             color: white;
                             padding: 10px;
                             cursor: pointer;
-                            &:hover{
-                                box-shadow: 0px 0px 5px 5px rgb(250, 0, 250);
-                            }
                         }
                     }
                 }

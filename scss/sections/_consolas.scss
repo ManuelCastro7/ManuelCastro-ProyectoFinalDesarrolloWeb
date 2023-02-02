@@ -1,17 +1,17 @@
 .consolas{
     main{
+        margin: 0px 20px 0px 20px;
         section{
             gap: 20px;
             .info{
-                background-color: black;
-                border: white solid 5px;
+                background: #353535;
                 h3{
                     margin-top: 0%;
                     color: $colorRose;
                 }
                 p{
-                    font-size: 20px;
                     text-align: initial;
+                    margin: 10px;
                 }
             }
         }

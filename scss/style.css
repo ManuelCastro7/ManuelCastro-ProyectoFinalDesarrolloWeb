@@ -1,0 +1,531 @@
+/*base*/
+body {
+  background-color: #1F2023;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: white;
+  padding: 0;
+  margin: 0%;
+}
+
+body h1 {
+  font-family: 'Zen Dots', cursive;
+  letter-spacing: 5px;
+  text-shadow: black 5px 5px 5px;
+}
+
+body h2 {
+  font-weight: 900;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+body h3 {
+  color: body h3 colorRose;
+  font-size: 25px;
+}
+
+.efectoHover:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 5px 5px #fa00fa;
+          box-shadow: 0px 0px 5px 5px #fa00fa;
+}
+
+/*partials*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  background: #353535;
+  margin: 10px 20px 10px 20px;
+  padding: 20px;
+}
+
+nav div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+nav div a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+nav div a:hover {
+  color: #fa00fa;
+}
+
+nav div:active {
+  color: #fa00fa;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #353535;
+  padding: 25px;
+  margin: 10px 20px 0px 20px;
+}
+
+.redes div a img {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-color: #1F2023;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: white;
+  padding: 0;
+  margin: 0%;
+}
+
+body h1 {
+  font-family: 'Zen Dots', cursive;
+  letter-spacing: 5px;
+  text-shadow: black 5px 5px 5px;
+}
+
+body h2 {
+  font-weight: 900;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+body h3 {
+  color: body h3 colorRose;
+  font-size: 25px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-bottom: white solid 5px;
+  background-color: #fa00c8;
+  margin: 0%;
+}
+
+/*sections*/
+.consolas main {
+  margin: 0px 20px 0px 20px;
+}
+
+.consolas main section {
+  gap: 20px;
+}
+
+.consolas main section .info {
+  background: #353535;
+}
+
+.consolas main section .info h3 {
+  margin-top: 0%;
+  color: #fa00fa;
+}
+
+.consolas main section .info p {
+  text-align: initial;
+  margin: 10px;
+}
+
+.productos {
+  margin: 0px 20px 10px 20px;
+}
+
+.productos .producto {
+  border-top: solid 5px white;
+  border-bottom: solid 5px;
+  background: #fa0064;
+  background: linear-gradient(135deg, #fa0064 0%, #6400fa 75%);
+}
+
+.productos .producto .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.productos .producto .cards section {
+  margin: 10px;
+  background-color: white;
+  border: 10px solid white;
+}
+
+.productos .producto .cards section div h3 {
+  color: black;
+}
+
+.productos .producto .cards section div h4 {
+  color: black;
+  font-weight: 900;
+  font-family: cursive;
+}
+
+.productos .producto .cards section div .click button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.index {
+  width: 100%;
+}
+
+.index .textos {
+  margin: 0px 20px 0px 20px;
+  padding: 20px;
+  background-color: black;
+  padding-bottom: 15px;
+}
+
+.index .textos div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index .textos div .infoGame {
+  gap: 10px;
+}
+
+.index .textos div h3 {
+  font-size: 25px;
+  color: #fa00fa;
+  border-bottom: 5px solid #fa00fa;
+}
+
+.index .textos div p {
+  text-align: initial;
+  font-size: 20px;
+}
+
+.index .textos div img {
+  width: 250px;
+  height: 200px;
+}
+
+.imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.imagenes img {
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.cards {
+  margin: 0px 20px 0px 20px;
+}
+
+.cards .banner {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.cards .imagenes {
+  gap: 20px;
+}
+
+.cards .imagenes .portadas {
+  background: #353535;
+  padding: 5px;
+}
+
+.cards .imagenes .portadas img {
+  margin-bottom: 15px;
+  width: 250px;
+  height: 300px;
+}
+
+.cards .imagenes .portadas h3 {
+  color: #fa00fa;
+}
+
+.cards .imagenes .portadas p {
+  text-align: initial;
+}
+
+/*definiendo areas*/
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: main;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+aside {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: aside;
+}
+
+footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  margin-top: 25px;
+}
+
+/*acomodando areas*/
+.index {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "nav" "main" "aside" "footer";
+  gap: 10px;
+}
+
+@media (min-width: 400px) {
+  .index {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+  .redes div img {
+    height: 50px;
+    width: 50px;
+  }
+  .infoGame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .index {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+  header {
+    background: #fa0064;
+    background: linear-gradient(135deg, #fa0064 0%, #6400fa 75%);
+  }
+  .redes div img {
+    height: 75px;
+    width: 75px;
+  }
+  .infoGame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+/*seccion de consolas*/
+.consolas {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "nav" "main" "section" "aside" "footer";
+  gap: 10px;
+}
+
+@media (min-width: 400px) {
+  .consolas {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "nav" "main" "aside" "footer";
+    gap: 10px;
+  }
+  .consolas .imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .consolas .imagenes img {
+    width: 300px;
+    height: 250px;
+  }
+  .imagenesConsolas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (min-width: 600px) {
+  .consolas {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+  .consolas .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .consolas .imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .consolas {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+  .consolas .imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*secciones otras*/
+.juegos {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "nav" "main" "section" "aside" "footer";
+  gap: 10px;
+}
+
+.cards img {
+  height: 150px;
+  width: 200px;
+}
+
+@media (min-width: 400px) {
+  .juegos .imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  .juegos .imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .portadas img {
+    height: 300px;
+    width: 250px;
+  }
+  .cards img {
+    height: 300px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .juegos .imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .juegos aside {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+/*# sourceMappingURL=style.css.map */
